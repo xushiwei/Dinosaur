@@ -1,4 +1,4 @@
-module github.com/xushiwei/BetaGo
+module github.com/xushiwei/Dinosaur
 
 go 1.16
 
