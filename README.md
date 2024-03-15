@@ -7,7 +7,7 @@ Dinosaur - a game powered by Go+ Builder
 
 ### Dinosaur
 
-![Screen Shot](assets/scr.jpg)
+<img src="assets/scr.jpg" width="480">
 
 ### How to run
 
