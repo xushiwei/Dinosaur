@@ -1,4 +1,4 @@
-Dinosaur - a game powered by Go+ spx game engine
+Dinosaur - a game powered by Go+ Builder
 =========
 
 [![Language](https://img.shields.io/badge/language-Go+-blue.svg)](https://github.com/goplus/gop)
@@ -7,4 +7,9 @@ Dinosaur - a game powered by Go+ spx game engine
 
 ### Dinosaur
 
-TODO
+![Screen Shot](assets/scr.jpg)
+
+### How to run
+
+- Install Go+. See https://github.com/goplus/gop#how-to-install.
+- gop run .
