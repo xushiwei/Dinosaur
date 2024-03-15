@@ -13,4 +13,3 @@ var (
 )
 
 isFinish = true
-run "res", {Title: "Dinosaur (by Go+)"}
