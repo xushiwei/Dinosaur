@@ -7,4 +7,9 @@ Dinosaur - a game powered by Go+ Builder
 
 ### Dinosaur
 
-TODO
+![Screen Shot](assets/scr.jpg)
+
+### How to run
+
+- Install Go+. See https://github.com/goplus/gop#how-to-install.
+- gop run .
