@@ -182,8 +182,10 @@ func (this *Dinosaur) Main() {
 //line Dinosaur.spx:24:1
 				return
 			}
+//line Dinosaur.spx:26:1
+			this.SetYpos(s)
 //line Dinosaur.spx:27:1
-			this.Glide__0(-200, float64(s-3), 0.01)
+			this.Wait(0.01)
 		}
 	})
 //line Dinosaur.spx:31:1
@@ -224,75 +226,77 @@ func (this *Dinosaur) Main() {
 				return
 			}
 //line Dinosaur.spx:53:1
-			this.Glide__0(-200, float64(s-3), 0.01)
+			this.SetYpos(s)
+//line Dinosaur.spx:54:1
+			this.Wait(0.01)
 		}
 	})
-//line Dinosaur.spx:57:1
-	this.OnKey__0(spx.KeyDown, func() {
 //line Dinosaur.spx:58:1
-		if this.isJump || this.isDown {
+	this.OnKey__0(spx.KeyDown, func() {
 //line Dinosaur.spx:59:1
+		if this.isJump || this.isDown {
+//line Dinosaur.spx:60:1
 			return
 		}
-//line Dinosaur.spx:62:1
-		this.isDown = true
 //line Dinosaur.spx:63:1
-		this.Wait(0.05)
+		this.isDown = true
 //line Dinosaur.spx:64:1
-		this.SetCostume(4)
+		this.Wait(0.05)
 //line Dinosaur.spx:65:1
+		this.SetCostume(4)
+//line Dinosaur.spx:66:1
 		this.isDown = false
 	})
-//line Dinosaur.spx:68:1
-	this.OnMsg__1("start", func() {
 //line Dinosaur.spx:69:1
-		this.Show()
+	this.OnMsg__1("start", func() {
 //line Dinosaur.spx:70:1
-		count := 0
+		this.Show()
 //line Dinosaur.spx:71:1
-		countDown := 0
+		count := 0
 //line Dinosaur.spx:72:1
+		countDown := 0
+//line Dinosaur.spx:73:1
 		for {
 			spx.Sched()
-//line Dinosaur.spx:73:1
-			this.Wait(0.05)
 //line Dinosaur.spx:74:1
-			if this.isJump {
+			this.Wait(0.05)
 //line Dinosaur.spx:75:1
+			if this.isJump {
+//line Dinosaur.spx:76:1
 				continue
 			}
-//line Dinosaur.spx:78:1
-			if this.isFinish {
 //line Dinosaur.spx:79:1
+			if this.isFinish {
+//line Dinosaur.spx:80:1
 				break
 			}
-//line Dinosaur.spx:82:1
-			if this.isDown {
 //line Dinosaur.spx:83:1
+			if this.isDown {
+//line Dinosaur.spx:84:1
 				continue
 			}
-//line Dinosaur.spx:86:1
-			if this.KeyPressed(spx.KeyDown) {
 //line Dinosaur.spx:87:1
-				this.isDown = true
+			if this.KeyPressed(spx.KeyDown) {
 //line Dinosaur.spx:88:1
-				countDown = (countDown + 1) % 2
+				this.isDown = true
 //line Dinosaur.spx:89:1
-				this.SetCostume(countDown + 4)
+				countDown = (countDown + 1) % 2
 //line Dinosaur.spx:90:1
-				this.isDown = false
+				this.SetCostume(countDown + 4)
 //line Dinosaur.spx:91:1
+				this.isDown = false
+//line Dinosaur.spx:92:1
 				continue
 			}
-//line Dinosaur.spx:94:1
-			count = (count + 1) % 4
 //line Dinosaur.spx:95:1
+			count = (count + 1) % 4
+//line Dinosaur.spx:96:1
 			this.SetCostume(count)
 		}
 	})
-//line Dinosaur.spx:99:1
-	this.OnMsg__1("finish", func() {
 //line Dinosaur.spx:100:1
+	this.OnMsg__1("finish", func() {
+//line Dinosaur.spx:101:1
 		this.SetCostume(6)
 	})
 }
@@ -561,9 +565,9 @@ func (this *Road) Main() {
 //line Road.spx:41:1
 			this.ChangeXpos(-1 * this.speed)
 //line Road.spx:42:1
-			if this.Xpos() < -600 {
+			if this.Xpos() < -400 {
 //line Road.spx:43:1
-				this.SetXpos(400)
+				this.SetXpos(800)
 			}
 //line Road.spx:46:1
 			this.Wait(0.01)

@@ -23,8 +23,8 @@ onClick => {
 		if s < 0 {
 			return
 		}
-
-		glide -200, float64(s-3), 0.01
+		setYpos s
+		wait 0.01
 	}
 }
 
@@ -50,7 +50,8 @@ onKey KeySpace, => {
 			return
 		}
 
-		glide -200, float64(s-3), 0.01
+		setYpos s
+		wait 0.01
 	}
 }
 

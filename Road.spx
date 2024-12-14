@@ -39,8 +39,8 @@ onCloned => {
 		}
 
 		changeXpos -1*speed
-		if xpos < -600 {
-			setXpos 400
+		if xpos < -400 {
+			setXpos 800
 		}
 
 		wait 0.01
