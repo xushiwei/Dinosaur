@@ -50,5 +50,5 @@ onMsg "largeTree", => {
 
 onMsg "start", => {
 	hide
-	destroy
+	deleteThisClone
 }

@@ -43,5 +43,5 @@ onMsg "bird", => {
 
 onMsg "start", => {
 	hide
-	destroy
+	deleteThisClone
 }

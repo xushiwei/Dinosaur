@@ -49,6 +49,6 @@ onMsg "smallTree", => {
 
 onMsg "start", => {
 	hide
-	destroy
+	deleteThisClone
 	return
 }
