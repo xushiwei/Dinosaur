@@ -13,6 +13,7 @@
     {
       "color": 15629590,
       "isDiscrete": true,
+      "name": "score",
       "label": "score",
       "mode": 1,
       "sliderMax": 100,
@@ -21,12 +22,13 @@
       "type": "stageMonitor",
       "val": "getVar:score",
       "visible": true,
-      "x": 390,
-      "y": 5
+      "x": 150,
+      "y": 175
     },
     {
       "color": 15629590,
       "isDiscrete": true,
+      "name": "high score",
       "label": "high score",
       "mode": 1,
       "sliderMax": 100,
@@ -35,8 +37,8 @@
       "type": "stageMonitor",
       "val": "getVar:highScore",
       "visible": true,
-      "x": 7,
-      "y": 5
+      "x": -230,
+      "y": 175
     },
     "SmallTree",
     "LargeTree",
